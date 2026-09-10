@@ -3,6 +3,7 @@
 Signed APK builds of **Equillio**, a fully offline, privacy-first Android mental
 health journal. This repository holds **release binaries only** — no source code.
 
+- **Website:** [equillio-site.vercel.app](https://equillio-site.vercel.app/)
 - **App ID:** `com.equillio.app`
 - **Minimum Android:** 8.0 (API 26)
 - **Network permissions:** none. Equillio has no `android.permission.INTERNET`.
