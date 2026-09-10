@@ -6,8 +6,8 @@ health journal. This repository holds **release binaries only** — no source co
 - **Website:** [equillio-site.vercel.app](https://equillio-site.vercel.app/)
 - **App ID:** `com.equillio.app`
 - **Minimum Android:** 8.0 (API 26)
-- **Network permissions:** none. Equillio has no `android.permission.INTERNET`.
-  Nothing you write ever leaves your device.
+- **Privacy:** Equillio makes no network requests. All data is encrypted
+  on-device with SQLCipher and nothing you write ever leaves your device.
 
 ## Install
 
@@ -44,10 +44,10 @@ its notes, plus a `.sha256` file next to the APK.
 ```sh
 shasum -a 256 equillio-v1.0.1-2-release.apk        # compare to the release notes
 apksigner verify --print-certs equillio-*.apk       # compare cert SHA-256
-aapt dump permissions equillio-*.apk                 # confirm: no INTERNET permission
 ```
 
-Signing certificate SHA-256: _published in the first release's notes_.
+Signing certificate SHA-256:
+`55cb505eeba1f8d15dc4178bd6c9d85225aade4b56e843ada8586860b7b25f0e`
 All releases are signed with the same key — if it ever differs, do not install.
 
 ## Reporting issues
