@@ -1,13 +1,15 @@
 # Equillio — sideload releases
 
-Signed APK builds of **Equillio**, a fully offline, privacy-first Android mental
+Signed APK builds of **Equillio**, a privacy-first, offline-first Android mental
 health journal. This repository holds **release binaries only** — no source code.
 
 - **Website:** [equillio-site.vercel.app](https://equillio-site.vercel.app/)
 - **App ID:** `com.equillio.app`
 - **Minimum Android:** 8.0 (API 26)
-- **Privacy:** Equillio makes no network requests. All data is encrypted
-  on-device with SQLCipher and nothing you write ever leaves your device.
+- **Privacy:** Your journal is encrypted on-device with SQLCipher and never
+  leaves your device. The app's only network call is a one-time signup email
+  during first-run onboarding — no journal content, analytics, or telemetry is
+  ever sent.
 
 ## Install
 
